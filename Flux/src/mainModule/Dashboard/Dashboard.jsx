@@ -20,7 +20,7 @@ class Dashboard extends Component {
     return (
       <React.Fragment>
         <div className="corediv">
-          <div className="display-flex">
+          <div className="display-flex" style={{width:"720px",height:"500px"}}>
             <div className="table-responsive" style={{width:"100%"}}>
             <table className="table table-striped table-hover">
               <thead className="thead-light">

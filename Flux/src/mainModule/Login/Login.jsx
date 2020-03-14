@@ -33,7 +33,7 @@ class Login extends Component {
             </div>
             <div style={{padding:"10px"}}>
               <div style={{padding:"10px 0px"}}>Enter Password</div>
-              <input className="form-control  style-bord" type="text" value={password||''} onChange={this.handleChange.bind(this, "password")} />
+              <input className="form-control  style-bord" type="password" value={password||''} onChange={this.handleChange.bind(this, "password")} />
               {submitted&&!password&&<div className="help-block">Password is required</div>}
             </div>
             <div style={{padding:"34px 0px 0px 85px"}}>

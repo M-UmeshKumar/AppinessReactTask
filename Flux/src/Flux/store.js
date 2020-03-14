@@ -82,7 +82,7 @@ export default alt.createStore({
     checkLogin(obj) {
         var { user = {} } = this.state;
         var { username, password } = obj;
-        if (user.username === username && user.password === password) {
+        if (user.username.toLocaleLowerCase() === username.toLocaleLowerCase() && user.password.toLocaleLowerCase() === password.toLocaleLowerCase()) {
             this.setState({ page: "Dashboard" })
         } else {
             // this.setState({ page: "Dashboard" })
